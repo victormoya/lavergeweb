@@ -1,25 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const HomePage = () => (
+const PhotosPage = () => (
   <div className="page-container">
     <nav className="vertical">
       <ul>
         <li>
-          <Link to="/gigs/">Gigs</Link>
+          <Link to="/gigs/"></Link>
         </li>
          <li>
-           <Link to="/music/">Music</Link>
-        </li>
-        <li>
-          <Link to="/photos/">Photos</Link>
+           <Link to="/music/"></Link>
         </li>
          <li>
-           <Link to="/contact/">Contact</Link>
+           <Link to="/contact/"></Link>
         </li>
       </ul>
     </nav>
   </div>
 )
 
-export default HomePage
+export default PhotosPage

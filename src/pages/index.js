@@ -4,8 +4,9 @@ import heros from '../media/heros.jpg'
 
 const IndexPage = () => (
   <div className="hero">
-    <Link to="/home/">
-      <img src={heros} alt="Handle This"/>
+    <img src={heros} alt="Handle This"/>
+      <Link to="/home/">
+      <h1 className="hero__title">Handle This</h1>
     </Link>
   </div>
 )

@@ -1,9 +1,31 @@
 //COLORS
 $black-base: #171717;
+//FONTS
+$font-base: './static/fonts/Concorde_Nova_BQ_Medium.ttf';
 
 //GENERAL
 body {
   background: $black-base;
+}
+
+//NAVIGATION
+nav.vertical {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  overflow: hidden;
+}
+
+nav.vertical > ul {
+  list-style-type: none;
+}
+
+nav.vertical > ul > li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  a {
+    color: #fff;
+  }
 }
 
 //MAIN
@@ -16,5 +38,15 @@ body {
     height: 466px;
     margin-top: -233px; /* Half the height */
     margin-left: -350px; /* Half the width */
+  }
+  h1 {
+    color: #fff;
+    text-decoration: none;
+    z-index: 9;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    font-size: 51px;
+    text-transform: uppercase;
   }
 }
