@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import heros from '../media/heros.jpg'
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <Link to="/home/">Go to page 2</Link>
+  <div className="hero">
+    <Link to="/home/">
+      <img src={heros} alt="Handle This"/>
+    </Link>
   </div>
 )
 

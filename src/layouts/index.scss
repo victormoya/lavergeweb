@@ -1,0 +1,20 @@
+//COLORS
+$black-base: #171717;
+
+//GENERAL
+body {
+  background: $black-base;
+}
+
+//MAIN
+.hero {
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 466px;
+    margin-top: -233px; /* Half the height */
+    margin-left: -350px; /* Half the width */
+  }
+}
