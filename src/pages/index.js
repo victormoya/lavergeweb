@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import heros from '../media/heros.jpg'
+import herosvideo from '../media/heros.mp4'
+
 
 const IndexPage = () => (
   <div className="hero">
-    <img src={heros} alt="Handle This"/>
-      <Link to="/home/">
-      <h1 className="hero__title">Handle This</h1>
+    <Link to="/home">
+      <video id="background-video" loop autoPlay>
+        <source src={herosvideo} type="video/mp4" />
+      </video>
     </Link>
   </div>
 )

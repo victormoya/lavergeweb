@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const HomePage = () => (
   <div className="page-container">
-    <h1>Home</h1>
+    <h1>Welcome</h1>
   </div>
 )
 

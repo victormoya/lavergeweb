@@ -1,11 +1,12 @@
 //COLORS
-$black-base: #171717;
+$black-base: #010001;
 //FONTS
 $font-base: './static/fonts/Concorde_Nova_BQ_Medium.ttf';
 
 //GENERAL
 body {
   background: $black-base;
+  font-family: $font-base;
 }
 
 //NAVIGATION
@@ -30,23 +31,12 @@ nav.vertical > ul > li {
 
 //MAIN
 .hero {
-  img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 700px;
-    height: 466px;
-    margin-top: -233px; /* Half the height */
-    margin-left: -350px; /* Half the width */
-  }
-  h1 {
-    color: #fff;
-    text-decoration: none;
-    z-index: 9;
-    position: absolute;
-    top: 35%;
-    left: 33%;
-    font-size: 51px;
-    text-transform: uppercase;
+  video {
+    height: 100%;
+    width: 100%;
+    float: left;
+    top: 0;
+    padding: 0;
+    position: fixed;
   }
 }
