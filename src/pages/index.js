@@ -5,8 +5,8 @@ import herosvideo from '../media/heros.mp4'
 
 const IndexPage = () => (
   <div className="hero">
-    <Link to="/home">
-      <video id="background-video" loop autoPlay>
+    <Link to="/listen">
+      <video loop autoPlay>
         <source src={herosvideo} type="video/mp4" />
       </video>
     </Link>
