@@ -10,4 +10,4 @@ const AlbumsPage = () => (
   </div>
 )
 
-export default HomePage
+export default AlbumsPage
