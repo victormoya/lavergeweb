@@ -1,6 +1,6 @@
 {
-  "name": "Laverge Band Website",
-  "description": "A site for the rock band Laverge",
+  "name": "lavergeweb",
+  "description": "A website for the rock band Laverge",
   "version": "1.0.0",
   "author": "Victor Moya <vmoyacueto@gmail.com>",
   "dependencies": {
