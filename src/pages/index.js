@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import herosvideo from '../media/heros.mp4'
+import herosvideo from '../../static/media/heros.mp4'
 
 
 const IndexPage = () => (

@@ -4,7 +4,7 @@ $black-base: #010001;
 //FONTS
 @font-face {
   font-family: 'Concorde';
-  src: url('fonts/Concorde_Nova_BQ_Medium.ttf') format('truetype');
+  src: url('../fonts/Concorde_Nova_BQ_Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,11 +35,10 @@ body {
     text-transform: uppercase;
     color: #fff;
     font-size: 18px;
-    letter-spacing: 4px;
     padding-left: 30px;
 
     &:hover {
-      letter-spacing: 8px;
+      letter-spacing: 4px;
       padding-left: 26px;
     }
   }
