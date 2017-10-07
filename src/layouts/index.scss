@@ -1,7 +1,14 @@
 //COLORS
 $black-base: #010001;
+
 //FONTS
-$font-base: './static/fonts/Concorde_Nova_BQ_Medium.ttf';
+@font-face {
+  font-family: 'concorde';
+  // src: url('fonts/Concorde_Nova_BQ_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-base: 'concorde';
 
 //GENERAL
 body {
@@ -16,17 +23,23 @@ body {
   margin-top: 30px;
   ul {
     list-style: none;
+    padding-left: 0;
   }
   ul > li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   ul > li > a {
+    font-family: $font-base;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding-left: 30px;
 
     &:hover {
-      text-decoration: line-through;
+      letter-spacing: 8px;
+      padding-left: 26px;
     }
   }
 }
