@@ -3,12 +3,13 @@ $black-base: #010001;
 
 //FONTS
 @font-face {
-  font-family: 'concorde';
-  // src: url('fonts/Concorde_Nova_BQ_Medium.ttf') format('truetype');
+  font-family: 'Concorde';
+  src: url('fonts/Concorde_Nova_BQ_Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-$font-base: 'concorde';
+
+$font-base: 'Concorde';
 
 //GENERAL
 body {
