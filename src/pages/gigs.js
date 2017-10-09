@@ -4,7 +4,7 @@ import Menu from '../layouts/menu'
 
 const Gigs = () => (
   <div>
-    <Menu />
+    <Menu active="gigs"/>
     <script type="text/javascript"
       charSet="utf-8"
       src="https://widget.bandsintown.com/main.min.js">

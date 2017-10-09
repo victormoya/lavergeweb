@@ -4,7 +4,7 @@ import Menu from '../layouts/menu'
 
 const AlbumsPage = () => (
   <div>
-    <Menu />
+    <Menu active="listen"/>
     <div className="album">
       <iframe style={{
         border: '0',

@@ -29,17 +29,17 @@ body {
   ul > li {
     margin-bottom: 15px;
   }
-  ul > li > a {
-    font-family: $font-base;
-    text-decoration: none;
-    text-transform: uppercase;
+  ul > li > a, span {
     color: #fff;
     font-size: 18px;
-    padding-left: 30px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-family: $font-base;
+    text-transform: uppercase;
+    padding: 7px 30px 5px;
 
-    &:hover {
-      letter-spacing: 4px;
-      padding-left: 26px;
+    &:hover, &.active {
+      background-color: #888888;
     }
   }
 }
