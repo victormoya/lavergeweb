@@ -68,3 +68,13 @@ body {
   max-height: 100%;
   overflow: auto;
 }
+
+.shows {
+  max-width: 650px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 100px;
+  bottom: 0;
+  margin: auto;
+}
