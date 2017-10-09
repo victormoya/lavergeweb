@@ -1,16 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Menu from '../layouts/menu'
 
 const AlbumsPage = () => (
   <div>
-    <nav className="menu">
-      <ul>
-        <li><a href="/">Welcome</a></li>
-        <li><a href="/listen">Listen</a></li>
-        <li><a href="/gigs">Attend</a></li>
-        <li><a href="/contact">Talk</a></li>
-      </ul>
-    </nav>
+    <Menu />
     <div className="album">
       <iframe style={{
         border: '0',
