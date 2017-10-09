@@ -5,11 +5,13 @@ import Menu from '../layouts/menu'
 class Gigs extends React.Component {
 
   componentWillMount() {
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//widget.bandsintown.com/main.min.js';
-    script.async = true;
-    document.body.appendChild(script);
+    if(typeof document !== "undefined") {
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = '//widget.bandsintown.com/main.min.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }
 
   render () {
