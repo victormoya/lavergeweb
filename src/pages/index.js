@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import video from '../../static/media/smoke.mp4'
+import poster from '../../static/media/poster.jpg'
 
 
 const IndexPage = () => (
   <div className="slogan">
     <Link to="/listen">
-        <h1>Laverge</h1>
-        <h2>Handle This</h2>
+      <img src={poster} />
     </Link>
   </div>
 )
