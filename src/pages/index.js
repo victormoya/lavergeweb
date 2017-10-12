@@ -5,7 +5,7 @@ import poster from '../../static/media/poster.jpg'
 
 
 const IndexPage = () => (
-  <div className="slogan">
+  <div className="poster">
     <Link to="/listen">
       <img src={poster} />
     </Link>

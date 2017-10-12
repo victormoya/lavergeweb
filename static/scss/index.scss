@@ -1,5 +1,5 @@
 //COLORS
-$black-base: #010001;
+$bg-base: #a7b1c0;
 
 //SCREEN SIZES
 $screen-sm-min: 768px; //small table
@@ -17,7 +17,7 @@ $font-base: 'Concorde';
 
 //GENERAL
 body {
-  background: $black-base;
+  background: $bg-base;
   font-family: $font-base;
 }
 
@@ -25,7 +25,11 @@ body {
 .menu {
   width: 200px;
   float: left;
-  margin-top: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  @media (min-width: $screen-sm-min) {
+    margin-top: 30px;
+  }
   ul {
     list-style: none;
     padding-left: 0;
@@ -57,6 +61,13 @@ body {
   top: 0;
   left: 0;
   z-index: -9;
+}
+
+.poster {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .slogan {
