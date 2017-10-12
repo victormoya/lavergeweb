@@ -30,7 +30,7 @@ class Gigs extends React.Component {
             data-text-color="#FFFFFF"
             data-link-color="#888888"
             data-popup-background-color="rgba(0,0,0,0)"
-            data-background-color="rgba(0,0,0,0)"
+            data-background-color="rgba(30, 34, 46, 0.30)"
             data-display-limit="15"
             data-link-text-color="#FFFFFF">
           </a>
