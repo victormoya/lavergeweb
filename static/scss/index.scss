@@ -1,6 +1,11 @@
 //COLORS
 $black-base: #010001;
 
+//SCREEN SIZES
+$screen-sm-min: 768px; //small table
+$screen-md-min: 992px; //medium desktop
+$screen-lg-min: 1200px; //large desktop
+
 //FONTS
 @font-face {
   font-family: 'Concorde';
@@ -8,7 +13,6 @@ $black-base: #010001;
   font-weight: normal;
   font-style: normal;
 }
-
 $font-base: 'Concorde';
 
 //GENERAL
@@ -45,14 +49,35 @@ body {
 }
 
 //MAIN
-.hero {
-  video {
-    height: 100%;
-    width: 100%;
-    float: left;
-    top: 0;
-    padding: 0;
-    position: fixed;
+.video-bg {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+
+.slogan {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 200px auto 0;
+    @media (min-width: $screen-sm-min) {
+      font-size: 80px;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 40px;
+    }
   }
 }
 
