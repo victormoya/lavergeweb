@@ -50,28 +50,6 @@
   }
 }
 
-.slogan {
-  text-align: center;
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-  h1 {
-    font-size: 60px;
-    text-transform: uppercase;
-    margin: 200px auto 0;
-    @media (min-width: $screen-sm-min) {
-      font-size: 80px;
-    }
-  }
-  h2 {
-    font-size: 30px;
-    @media (min-width: $screen-sm-min) {
-      font-size: 40px;
-    }
-  }
-}
-
 .album {
   width: 350px;
   position: fixed;
