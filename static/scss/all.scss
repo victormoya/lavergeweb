@@ -1,0 +1,9 @@
+
+@import './variables.scss';
+@import './components.scss';
+
+//GENERAL
+body {
+  background: $bg-base;
+  font-family: $font-base;
+}
