@@ -5,10 +5,17 @@ import poster from '../../static/media/poster.jpg'
 
 
 const IndexPage = () => (
-  <div className="poster">
-    <Link to="/listen">
-      <img src={poster} />
-    </Link>
+  <div>
+    <div className="banner">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Taqn0eOs7KI?controls=0&rel=0"
+        allowFullScreen
+      >
+      </iframe>
+      <Link to="/listen">ENTER</Link>
+    </div>
   </div>
 )
 

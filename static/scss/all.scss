@@ -7,3 +7,12 @@ body {
   background: $bg-base;
   font-family: $font-base;
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: #ddd;
+  }
+}

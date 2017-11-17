@@ -5,21 +5,20 @@ const Menu = (props) => (
   <div>
     <nav className="menu">
       <ul>
-        <li><a href="/">Welcome</a></li>
         <li>
           {
             props.active === "listen" ?
-            <span className="active">Listen</span>
+            <span className="active">Album</span>
             :
-            <a href="/listen">Listen</a>
+            <a href="/listen">Album</a>
           }
         </li>
         <li>
           {
             props.active === "gigs" ?
-            <span className="active">Attend</span>
+            <span className="active">Dates</span>
             :
-            <a href="/gigs">Attend</a>
+            <a href="/gigs">Dates</a>
           }
         </li>
       </ul>

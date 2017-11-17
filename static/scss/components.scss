@@ -39,14 +39,16 @@
   z-index: -9;
 }
 
-.poster {
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  img {
-    display: block;
-    width: 100%;
+  flex-direction: column;
+
+  iframe {
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 
