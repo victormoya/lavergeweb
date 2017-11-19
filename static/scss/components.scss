@@ -63,6 +63,11 @@
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
+
+  iframe {
+    max-width: 100% !important;
+    height: 468px !important;
+  }
 }
 
 .shows {
