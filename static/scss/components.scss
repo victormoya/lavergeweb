@@ -68,6 +68,11 @@
 
 .shows {
   max-width: 650px;
-  top: 150px;
   margin: auto;
+
+  iframe {
+    @media (min-width: $screen-sm-min) {
+      margin-top: 150px;
+    }
+  }
 }
