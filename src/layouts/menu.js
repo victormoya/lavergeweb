@@ -21,6 +21,9 @@ const Menu = (props) => (
             <a href="/gigs">Dates</a>
           }
         </li>
+        <li>
+          <a target="_blank" href="http://www.carcosarecords.com/wp-content/uploads/2017/10/NOTA-DE-PRENSA-WEB.pdf">Press</a>
+        </li>
       </ul>
     </nav>
   </div>
