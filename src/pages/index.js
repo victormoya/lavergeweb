@@ -11,7 +11,7 @@ const IndexPage = () => (
         width="560"
         height="315"
         frameBorder="0"
-        src="https://www.youtube.com/embed/Taqn0eOs7KI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
+        src="https://www.youtube.com/embed/YChQEz4tj5s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
         allowFullScreen
       >
       </iframe>
