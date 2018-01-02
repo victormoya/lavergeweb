@@ -22,7 +22,11 @@ const Menu = (props) => (
           }
         </li>
         <li>
-          <a target="_blank" href="http://www.carcosarecords.com/wp-content/uploads/2017/10/NOTA-DE-PRENSA-WEB.pdf">Press</a>
+          <a
+            target="_blank"
+            href="http://www.carcosarecords.com/wp-content/uploads/2017/10/NOTA-DE-PRENSA-WEB.pdf">
+            Press
+          </a>
         </li>
       </ul>
     </nav>

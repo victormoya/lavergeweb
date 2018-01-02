@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Menu from '../layouts/menu'
 
 class Gigs extends React.Component {
 
@@ -18,7 +16,6 @@ class Gigs extends React.Component {
   render () {
     return (
       <div>
-        <Menu active="gigs"/>
         <div className="shows">
           <a
             href="http://www.songkick.com/artists/8348243"
