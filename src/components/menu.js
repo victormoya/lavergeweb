@@ -5,28 +5,21 @@ const Menu = (props) => (
   <div>
     <nav className="menu">
       <ul>
-        <li>
-          {
-            props.active === "listen" ?
-            <span className="active">Album</span>
-            :
-            <a href="/listen">Album</a>
-          }
+        <li className="menu__item">
+          <span className="line"></span>
+          <a href="/listen">Photos</a>
         </li>
-        <li>
-          {
-            props.active === "gigs" ?
-            <span className="active">Dates</span>
-            :
-            <a href="/gigs">Dates</a>
-          }
+        <li className="menu__item">
+          <span className="line"></span>
+          <a href="/listen">Album</a>
         </li>
-        <li>
-          <a
-            target="_blank"
-            href="http://www.carcosarecords.com/wp-content/uploads/2017/10/NOTA-DE-PRENSA-WEB.pdf">
-            Press
-          </a>
+        <li className="menu__item">
+          <span className="line"></span>
+          <a href="/gigs">Dates</a>
+        </li>
+        <li className="menu__item">
+          <span className="line"></span>
+          <a href="/gigs">Press</a>
         </li>
       </ul>
     </nav>
