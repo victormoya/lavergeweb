@@ -54,12 +54,19 @@
   width: 100vw;
   height: 100vh;
   z-index: -9;
+
+  .logo {
+    > img {
+      margin-top: 65px;
+    }
+  }
 }
 
 .play-button {
   cursor: pointer;
   .circle {
-      background: #ddd;
+      background: transparent;
+      border: 3px solid #ffffff;
       border-radius: 150px;
       width: 70px;
       height: 70px;
@@ -78,12 +85,20 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 15px 0 15px 30px;
+      border-width: 17px 0 17px 30px;
       border-color: transparent transparent transparent #ffffff;
       position: absolute;
-      top: 44%;
-      left: 44%;
+      top: 40%;
+      left: 45%;
       margin: -10px 0 0 -7px;
+  }
+  &:hover {
+    .circle {
+      border: 3px solid $red;
+    }
+    .triangle:before {
+        border-color: transparent transparent transparent $red;
+    }
   }
 }
 
@@ -120,4 +135,30 @@
       margin-top: 150px;
     }
   }
+}
+
+.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
