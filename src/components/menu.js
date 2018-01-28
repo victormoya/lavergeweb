@@ -6,15 +6,15 @@ const Menu = (props) => (
     <ul className="menu">
       <li className="menu__item">
         <span className="line"></span>
-        <a href="/photos">Photos</a>
+        <a href="/welcome">Home</a>
       </li>
       <li className="menu__item">
         <span className="line"></span>
-        <a href="/listen">Album</a>
+        <a href="/listen">Gigs</a>
       </li>
       <li className="menu__item">
         <span className="line"></span>
-        <a href="/gigs">Dates</a>
+        <a href="/gigs">Shop</a>
       </li>
       <li className="menu__item">
         <span className="line"></span>
