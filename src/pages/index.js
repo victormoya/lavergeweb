@@ -54,6 +54,7 @@ class IndexPage extends React.Component {
           meta={[
             { name: 'description', content: 'Laverge' },
             { name: 'keywords', content: 'laverge, rock' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'}
           ]}
           />
         <Link to="/" className="logo">
@@ -68,13 +69,15 @@ class IndexPage extends React.Component {
           style={customStyles}
         >
         <a onClick={this.handleCloseModal} className="close" />
+        <div className="video-wrapper">
           <iframe
-            width="560"
-            height="315"
+            width="1280"
+            height="720"
             frameBorder="0"
             src="https://www.youtube.com/embed/YChQEz4tj5s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
             allowFullScreen
-          />
+            />
+        </div>
         </Modal>
       </div>
     )
