@@ -79,7 +79,6 @@ class IndexPage extends React.Component {
             height="720"
             frameBorder="0"
             src="https://www.youtube.com/embed/YChQEz4tj5s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
-            allowFullScreen
             />
         </div>
         </Modal>
