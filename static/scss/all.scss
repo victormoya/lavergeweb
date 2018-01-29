@@ -1,6 +1,7 @@
 
 @import './variables.scss';
-@import './components.scss';
+@import './mixins.scss';
+@import 'components/all.scss';
 
 //GENERAL
 body {

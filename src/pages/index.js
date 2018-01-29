@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import PlayButton from '../components/playButton'
 import logo from '../../static/media/logo-white.png'
 import Modal from 'react-modal'
+import Button from '../components/Button'
 
 import '../../static/scss/all.scss'
 
@@ -57,12 +58,15 @@ class IndexPage extends React.Component {
             { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'}
           ]}
           />
-        <Link to="/" className="logo">
+        <div className="logo">
           <img src={logo} alt="LAVERGE" />
-        </Link>
+        </div>
         <a onClick={this.handleOpenModal}>
           <PlayButton />
         </a>
+        <div className="enter-button">
+          <Button text="Enter site" />
+        </div>
         <Modal
           isOpen={this.state.showModal}
           shouldCloseOnOverlayClick={true}
