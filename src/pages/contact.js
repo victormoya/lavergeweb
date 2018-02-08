@@ -1,8 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Template from '../layouts/template';
 
 const ContactPage = () => (
   <div>
+    <Template>
+    </Template>
   </div>
 )
 

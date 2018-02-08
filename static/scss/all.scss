@@ -5,16 +5,23 @@
 
 //GENERAL
 body {
+  color: #fff;
   background: $bg-base;
   font-family: $font-base;
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.content {
+  min-height: 800px;
+  padding: 50px;
+}
+
 a {
   color: #fff;
   text-decoration: none;
-
-  &:hover {
-    color: #ddd;
-  }
 }

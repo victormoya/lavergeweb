@@ -60,10 +60,7 @@
 
   &:hover {
     .circle {
-      border: 3px solid #666;
-    }
-    .triangle:before {
-        border-color: transparent transparent transparent #666;
+      background: rgba(0, 0, 0, 0.5);
     }
   }
 }

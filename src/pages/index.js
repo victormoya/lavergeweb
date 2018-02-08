@@ -9,7 +9,7 @@ import Button from '../components/Button'
 
 import '../../static/scss/all.scss'
 
-const customStyles = {
+const modalStyles = {
   content : {
     top                   : '50%',
     left                  : '50%',
@@ -26,27 +26,21 @@ const customStyles = {
   }
 };
 
-
 class IndexPage extends React.Component {
-
   constructor () {
     super();
     this.state = {
       showModal: false
     };
-
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
-
   handleOpenModal () {
     this.setState({ showModal: true });
   }
-
   handleCloseModal () {
     this.setState({ showModal: false });
   }
-
   render () {
     return (
       <div className="video-bg">
@@ -61,16 +55,18 @@ class IndexPage extends React.Component {
         <div className="logo">
           <img src={logo} alt="LAVERGE" />
         </div>
-        <a onClick={this.handleOpenModal}>
+        <div onClick={this.handleOpenModal}>
           <PlayButton />
-        </a>
+        </div>
         <div className="enter-button">
-          <Button text="Enter site" />
+          <Link to="/welcome">
+            <Button text="Enter site" />
+          </Link>
         </div>
         <Modal
           isOpen={this.state.showModal}
           shouldCloseOnOverlayClick={true}
-          style={customStyles}
+          style={modalStyles}
         >
         <a onClick={this.handleCloseModal} className="close" />
         <div className="video-wrapper">
