@@ -8,7 +8,11 @@ body {
   color: #fff;
   background: $bg-base;
   font-family: $font-base;
-  overflow: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -17,11 +21,16 @@ body {
 }
 
 .content {
-  min-height: 800px;
+  min-height: 400px;
   padding: 50px;
+  background: url('../media/landscape.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }

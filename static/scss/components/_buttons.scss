@@ -28,3 +28,20 @@
   stroke-dasharray: 422, 0;
   stroke-dashoffset: 0;
 }
+
+.btn-solid {
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 40px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-solid:hover {
+  background: #fff;
+  color: black;
+}

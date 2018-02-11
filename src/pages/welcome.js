@@ -1,15 +1,18 @@
 import React from 'react'
 import Template from '../layouts/template';
+import landscape from '../../static/media/landscape.jpg'
+import Button from '../components/button';
 
 
 const WelcomePage = () => (
   <div>
     <Template>
-      Content
-      // img bg with buttons
-      // menu at window bottom
-      // scroll menu to stick beside Header
-      // gallery section with slider
+      <div className="banner">
+        <a target="_blank"
+          href="https://laverge.bandcamp.com/album/handle-this"
+          className="btn-solid">Listen now Handle This
+        </a>
+      </div>
     </Template>
   </div>
 )
