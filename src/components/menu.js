@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Menu = (props) => (
-  <div>
+  <div className="only-desktop">
     <ul className="list">
       { location.pathname === '/welcome' ?
         <li className="list__item active">

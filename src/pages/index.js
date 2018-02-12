@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import PlayButton from '../components/playButton'
-import logo from '../../static/media/logo-white.png'
-import Modal from 'react-modal'
-import Button from '../components/Button'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import PlayButton from '../components/playButton';
+import logo from '../../static/media/logo-white.png';
+import Modal from 'react-modal';
+import EnterButton from '../components/enterButton';
 
-import '../../static/scss/all.scss'
+import '../../static/scss/all.scss';
 
 const modalStyles = {
   content : {
@@ -60,7 +60,7 @@ class IndexPage extends React.Component {
         </div>
         <div className="enter-button">
           <Link to="/welcome">
-            <Button text="Enter site" />
+            <EnterButton text="Enter site" />
           </Link>
         </div>
         <Modal

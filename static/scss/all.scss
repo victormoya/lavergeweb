@@ -10,27 +10,44 @@ body {
   font-family: $font-base;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   color: #fff;
   text-decoration: none;
 }
 
 .wrapper {
-  max-width: 1024px;
+  max-width: $screen-lg-min;
   margin: auto;
 }
 
 .content {
   min-height: 400px;
-  padding: 50px;
   background: url('../media/landscape.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
+  @media (min-width: $screen-sm-min) {
+    padding: 50px;
+  }
 }
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
+}
+
+//HELPERS
+
+.only-desktop {
+  display: none;
+  @media (min-width: $screen-md-min) {
+    display: block;
+  }
 }

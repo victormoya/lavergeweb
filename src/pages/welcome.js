@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Template from '../layouts/template';
-import landscape from '../../static/media/landscape.jpg'
-import Button from '../components/button';
+import landscape from '../../static/media/landscape.jpg';
 
 
 const WelcomePage = () => (

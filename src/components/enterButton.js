@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = (props) => {
+const EnterButton = (props) => {
   return (
     <div className="btn">
       <svg>
@@ -11,4 +11,4 @@ const Button = (props) => {
   )
 }
 
-export default Button
+export default EnterButton

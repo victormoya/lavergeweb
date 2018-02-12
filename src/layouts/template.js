@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from '../../static/media/logo-white.png'
 import Menu from '../components/menu';
+import MenuMobile from '../components/menuMobile';
 import Footer from '../components/footer';
 
 import '../../static/scss/all.scss'
@@ -24,6 +25,7 @@ const TemplateWrapper = (props) => (
         </Link>
       </div>
       <Menu />
+      <MenuMobile />
       <div className="content">
         {props.children}
       </div>

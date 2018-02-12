@@ -1,0 +1,45 @@
+.menu-icon {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+
+  &__line {
+    height: 5px;
+    width: 50px;
+    @media (min-width: $screen-xs-min) {
+      height: 10px;
+      width: 100%;
+    }
+    margin: 5px 0;
+    background-color: #fff;
+  }
+
+  &:hover {
+    .menu-icon__line {
+      background-color: $red;
+      transition: background-color .25s ease-out;
+    }
+  }
+}
+
+.menu-mobile {
+  &__list {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .link {
+      text-transform: uppercase;
+      font-size: 75px;
+      margin: 10px 0;
+    }
+  }
+}

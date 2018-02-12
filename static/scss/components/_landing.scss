@@ -6,9 +6,10 @@
 
 .video-bg {
   background: url('../media/video-bg.png') no-repeat center center fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 97vw;
+  height: 97vh;
   z-index: -9;
+  overflow: hidden;
 
   .logo {
     > img {
