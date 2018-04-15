@@ -25,7 +25,7 @@ const TemplateWrapper = (props) => (
           <img src={logo} alt="LAVERGE" />
         </Link>
       </div>
-      <Menu location={location}/>
+      <Menu />
       <MenuMobile />
       <div className="content">
         {props.children}

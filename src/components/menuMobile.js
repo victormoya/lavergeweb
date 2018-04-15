@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import { navigateTo } from 'gatsby-link';
 
 const modalStyles = {
   content : {
@@ -44,10 +45,10 @@ class MenuMobile extends React.Component {
         <Modal isOpen={this.state.showMenu} style={modalStyles}>
           <div className="menu-mobile__list">
             <a onClick={this.closeMenu} className="close" />
-            <a href="/welcome" className="link">Home</a>
-            <a href="/gigs" className="link">Gigs</a>
+            <a onClick={() => navigateTo('/welcome')} className="link">Home</a>
+            <a onClick={() => navigateTo('/gigs')} className="link">Gigs</a>
             <a target="_blank" href="http://carcosarecords.bigcartel.com/" className="link">Shop</a>
-            <a href="/contact" className="link">Contact</a>
+            <a onClick={() => navigateTo('/contact')}  className="link">Contact</a>
           </div>
         </Modal>
       </div>
