@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Menu = (props) => (
+const Menu = props => (
   <div className="only-desktop">
     <ul className="list">
       { location.pathname === '/welcome' ?

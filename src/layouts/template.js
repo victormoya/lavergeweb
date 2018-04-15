@@ -6,6 +6,7 @@ import logo from '../../static/media/logo-white.png'
 import Menu from '../components/menu';
 import MenuMobile from '../components/menuMobile';
 import Footer from '../components/footer';
+import location from 'react-router';
 
 import '../../static/scss/all.scss'
 
@@ -24,7 +25,7 @@ const TemplateWrapper = (props) => (
           <img src={logo} alt="LAVERGE" />
         </Link>
       </div>
-      <Menu />
+      <Menu location={location}/>
       <MenuMobile />
       <div className="content">
         {props.children}
