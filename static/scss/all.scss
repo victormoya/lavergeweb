@@ -1,19 +1,53 @@
 
 @import './variables.scss';
-@import './components.scss';
+@import './mixins.scss';
+@import 'components/all.scss';
 
 //GENERAL
 body {
+  color: #fff;
   background: $bg-base;
   font-family: $font-base;
-  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+}
 
-  &:hover {
-    color: #ddd;
+.wrapper {
+  max-width: $screen-lg-min;
+  margin: auto;
+}
+
+.content {
+  min-height: 400px;
+  background: url('../media/landscape.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media (min-width: $screen-sm-min) {
+    padding: 50px;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+//HELPERS
+
+.only-desktop {
+  display: none;
+  @media (min-width: $screen-md-min) {
+    display: block;
   }
 }

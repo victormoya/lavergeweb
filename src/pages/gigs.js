@@ -1,4 +1,5 @@
 import React from 'react'
+import Template from '../layouts/template';
 
 class Gigs extends React.Component {
 
@@ -16,17 +17,19 @@ class Gigs extends React.Component {
   render () {
     return (
       <div>
-        <div className="shows">
-          <a
-            href="http://www.songkick.com/artists/8348243"
-            className="songkick-widget"
-            data-theme="dark"
-            data-track-button="on"
-            data-font-color="#ffffff"
-            data-detect-style="true"
-            data-background-color="transparent">
-          </a>
-        </div>
+        <Template>
+          <div className="shows">
+            <a
+              href="http://www.songkick.com/artists/8348243"
+              className="songkick-widget"
+              data-theme="dark"
+              data-track-button="on"
+              data-font-color="#ffffff"
+              data-detect-style="true"
+              data-background-color="transparent">
+            </a>
+          </div>
+        </Template>
       </div>
     )
   }

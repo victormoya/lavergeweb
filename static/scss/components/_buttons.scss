@@ -1,0 +1,47 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 166px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 1.8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn svg {
+  position: absolute;
+  top: 0; left: 0;
+}
+.btn svg rect {
+  stroke: #fff;
+  stroke-width: 6;
+  stroke-dasharray: 121, 90;
+  stroke-dashoffset: 188;
+
+  @include transition(all 1000ms ease-in-out);
+}
+.btn:hover svg rect {
+  stroke-dasharray: 422, 0;
+  stroke-dashoffset: 0;
+}
+
+.btn-solid {
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 40px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-solid:hover {
+  background: #fff;
+  color: black;
+}

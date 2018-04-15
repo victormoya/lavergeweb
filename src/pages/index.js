@@ -1,14 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import PlayButton from '../components/playButton'
-import logo from '../../static/media/logo-white.png'
-import Modal from 'react-modal'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import PlayButton from '../components/playButton';
+import logo from '../../static/media/logo-white.png';
+import Modal from 'react-modal';
+import EnterButton from '../components/enterButton';
 
-import '../../static/scss/all.scss'
+import '../../static/scss/all.scss';
 
-const customStyles = {
+const modalStyles = {
   content : {
     top                   : '50%',
     left                  : '50%',
@@ -25,27 +26,21 @@ const customStyles = {
   }
 };
 
-
 class IndexPage extends React.Component {
-
   constructor () {
     super();
     this.state = {
       showModal: false
     };
-
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
-
   handleOpenModal () {
     this.setState({ showModal: true });
   }
-
   handleCloseModal () {
     this.setState({ showModal: false });
   }
-
   render () {
     return (
       <div className="video-bg">
@@ -57,16 +52,21 @@ class IndexPage extends React.Component {
             { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'}
           ]}
           />
-        <Link to="/" className="logo">
+        <div className="logo">
           <img src={logo} alt="LAVERGE" />
-        </Link>
-        <a onClick={this.handleOpenModal}>
+        </div>
+        <div onClick={this.handleOpenModal}>
           <PlayButton />
-        </a>
+        </div>
+        <div className="enter-button">
+          <Link to="/welcome">
+            <EnterButton text="Enter site" />
+          </Link>
+        </div>
         <Modal
           isOpen={this.state.showModal}
           shouldCloseOnOverlayClick={true}
-          style={customStyles}
+          style={modalStyles}
         >
         <a onClick={this.handleCloseModal} className="close" />
         <div className="video-wrapper">
@@ -75,7 +75,6 @@ class IndexPage extends React.Component {
             height="720"
             frameBorder="0"
             src="https://www.youtube.com/embed/YChQEz4tj5s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
-            allowFullScreen
             />
         </div>
         </Modal>
